@@ -1,0 +1,24 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+
+$font: Montserrat, Arial,Sans-serif;
+$white: #e8e8e8;
+$black: #29323c;
+
+@mixin font_white(){
+	font-family: $font;
+	color: $white;
+}
+@mixin font_title(){
+	font-family: $font;
+	color: $black;
+	text-transform: uppercase;
+	font-size: 26px;
+	font-weight: bold;
+
+}
+
+@import 'main-header';
+@import 'promo';
+@import 'btn';
+@import 'servises';

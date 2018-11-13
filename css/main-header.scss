@@ -1,0 +1,16 @@
+.main-header{
+	background-color: #404A51;
+	background-image: url('../img/bg-header.jpg');
+	opacity: 0.8;
+	padding-top: 10px;
+}
+
+.main-header__logo{
+	max-width: 60px;
+}
+.main-header__menu{
+	@include font_white();
+	font-size: 14px;
+	text-transform: uppercase;
+
+}
