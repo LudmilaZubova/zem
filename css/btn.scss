@@ -1,14 +1,70 @@
+@mixin hover-white(){
+	background-color:$black;
+	opacity: 0.5;
+	color:$white;
+}
+@mixin hover-black(){
+	background-color: $white;
+	opacity:0.5;
+	color:$black;
+}
+@mixin white_btn(){
+	background-color: transparent;
+	border: 1px solid $white;
+	color:$white;
+	
+}
+a{
+	text-decoration: none;
+	color:$white;
+}
 .btn{
-	padding: 20px 40px;
+	padding: 10px 20px;
 	border-radius: 30px;
 	text-transform: uppercase;
 	color:$white;
 	margin-left: 50%;
     transform: translateX(-50%);
 	&__promo{
-		background-color: transparent;
-		border: 1px solid $white;
-		color:$white;
+		@include white_btn();
 		margin-bottom: 200px;
+		&:hover{
+			@include hover-white();
+		}
+	}
+	&__team{
+		@include white_btn();
+		margin-top: 30px;
+		margin-bottom:100px;
+		&:hover{
+			@include hover-white();
+		}
+	}
+	&__pricing{
+		background-color:$black;
+		color:$white;
+		position: absolute;
+		bottom: 50px;
+    	right: 25%;
+		&:hover{
+			@include hover-black();
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.btn__team{
+	margin-top: 63px;
+    margin-bottom: 66px;
+	}
+	.btn__pricing{
+	bottom: 29px;
+    right: 36%;
+	}
+}
+@media (max-width:425px) {
+	.btn__pricing{
+	bottom: 24px;
+    right: 23%;
 	}
 }

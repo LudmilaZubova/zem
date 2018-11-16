@@ -1,0 +1,38 @@
+.clients{
+	padding-top:30px;
+	padding-bottom: 30px;
+
+	&__title{
+		@include font_title;
+	}
+	&__text{
+		@include font_text;
+		position: relative;
+		&::after{
+			@include p_after;
+		}
+	}
+	&__blockquote{
+		border:none;
+		text-align: center;
+		position: relative;
+		&::after{
+			content:"”";
+			font-size: 40px;
+			font-weight: bold;
+			color:$black;
+			top:31px;
+			right:48%;
+			opacity:0.5;
+
+		}
+	}
+	&__autor--name{
+		@include font_text();
+		font-weight: bold;
+	}
+	&__autor--position{
+		font-size: 13px;
+		font-family: $font;
+	}
+}

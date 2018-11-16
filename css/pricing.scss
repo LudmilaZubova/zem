@@ -1,0 +1,74 @@
+.pricing{
+	padding-top:50px;
+	&__title{
+		@include font_title();
+	}
+	&__text{
+		@include font_text();
+		position:relative;
+		&::after{
+			@include p_after();
+		}
+	}
+}
+.pricing-card{
+	border:1px solid #eee;
+	border-collapse: collapse;
+	height: 575px;
+	margin-bottom:75px;
+	position:relative;
+	&__top{
+		border-bottom: 1px solid #eee;	
+	}
+	&__title{
+		font-size: 20px;
+		font-weight: bold;
+		text-align: center;
+		margin-bottom: 10px;
+		color:$black;
+	}
+	&__price{
+		font-size: 45px;
+		color:$black;
+		text-align: center;
+	}
+	&__duration{
+		font-size: 14px;
+		color:$black;
+		opacity: .8;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	&__bottom{
+		padding:40px;
+		padding-bottom: 20px;
+		
+	}
+	&__text{
+		font-family: Open Sans,sans-serif;
+		font-size: 14px;
+		line-height: 40px;
+		color:$black;
+		text-align: center;
+		margin-bottom:30px;
+	}
+	&--best{
+		padding-top: 20px;
+		margin-top:-20px;
+		border-top: 3px solid #000;
+		height: 595px;
+
+	}
+}
+
+
+@media (max-width: 768px) {
+	.pricing-card{
+		height:475px;
+	}
+}
+@media (max-width:425px) {
+	.pricing-card{
+		height:500px;
+	}
+}

@@ -1,0 +1,12 @@
+.partners{
+	background-color: #F5F5F5;
+	padding:20px;
+	&__list{
+		display:flex;
+		justify-content:space-around;
+		list-style:none;
+	}
+	&__item{
+		margin-right: 25px;
+	}
+}

@@ -1,0 +1,17 @@
+.sotial{
+	&__text{
+		float: left;
+		font-size: 14px;
+		line-height: 26px;
+	}
+	&__list{
+		list-style-type: none;
+		display: flex;
+	}
+	&__item{
+		width: 25px;
+		height:25px;
+		opacity:0.8;
+		margin-right: 10px;
+	}
+}

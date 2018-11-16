@@ -13,9 +13,13 @@
 			<div class="main-header__logo col-md-1 col-sm-2">
 				<img src="img/logo-header.png" alt="logo">
 			</div>
-			<div class="main-header__nav col-md-1 col-sm-2 col-md-1-offset-10 col-sm-offset-8 ">
-				<p class="main-header__menu">Menu</p>
-				<botton class="main-header__btn"></botton>
+			<div class="main-header__nav col-md-4 col-sm-4 col-md-offset-7 col-sm-offset-6">
+ 				<nav class="nav">
+  					<a class="nav__item" href="#servises">servises</a>
+  					<a class="nav__item" href="#work">works</a>
+  					<a class="nav__item" href="#team">Team</a>
+  					<a class="nav__item" href="#pricing">Price</a>
+ 				</nav>
 			</div>	
 		
 			<section class="promo row">
@@ -26,7 +30,7 @@
 				</div>
 			</section>
 		</header>	
-		<section class="services">
+		<section class="services row" id="services">
 			<h2 class="services__title">Services</h2>
 			<p class="services__text">Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
 			<div class="row">
@@ -34,8 +38,8 @@
 					<div class="services__img">
 						<img src="img/laptop3.png" alt="loptop">
 					</div>
-					h3 class="services__description-title">Fully Responsive</h3>
-					<p class="services__description-">Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</p>
+					<h3 class="services__description--title">Fully Responsive</h3>
+					<p class="services__description">Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</p>
 				</div>
 				<div class="col-md-3">
 					<div class="services__img" alt="service">
@@ -60,50 +64,51 @@
 				</div>
 			</div>
 		</section>
-		<section class="work">
+		<section class="work" id="work">
 			<h2 class="work__title">Works</h2>
 			<p class="work__text">Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
 			<div class="row">
 				<div class=" work__img col-md-4 col-sm-6">
-					<img src="img/gallery-1.jpg" alt="work">
+					<img class="img-responsive center-block" src="img/gallery-1.jpg" alt="work">
 				</div>
 				<div class=" work__img col-md-4 col-sm-6">
-					<img src="img/gallery-2.jpg" alt="work">
+					<img class="img-responsive center-block" src="img/gallery-2.jpg" alt="work">
 				</div>
-				<div class=" work__img col-md-4 col-sm-6">
-					<img src="img/gallery-3.jpg" alt="work">
+				<div class=" work__img col-md-4 hidden-sm">
+					<img class="img-responsive center-block" src="img/gallery-3.jpg" alt="work">
 				</div>
 			</div>
-			<div class="row">
+			<div class="row" style="margin-top: 15px;">
 				<div class=" work__img col-md-4 col-sm-6">
-					<img src="img/gallery-4.jpg" alt="work">
+					<img class="img-responsive center-block" src="img/gallery-4.jpg" alt="work">
 				</div>
 				<div class=" work__img col-md-4 col-sm-6">
-					<img src="img/gallery-5.jpg" alt="work">
+					<img class="img-responsive center-block" src="img/gallery-5.jpg" alt="work">
 				</div>
-				<div class=" work__img col-md-4 col-sm-6">
-					<img src="img/gallery-6.jpg" alt="work">
+				<div class=" work__img col-md-4 hidden-sm">
+					<img class="img-responsive center-block" src="img/gallery-6.jpg" alt="work">
 				</div>
 			</div>
 		</section>
 		<section class="clients">
-			<h2>Happy Clients</h2>
+			<h2 class="clients__title">Happy Clients</h2>
 			<p class="clients__text">Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
 			<blockquote class="clients__blockquote">
 				<q>Bebed pupu warni sangsam ngundang ajang, gujeng sirah lair menda bebucal benang; lek-lekan? Madeg pendhet lenggah, "nanem dipetak dhuwung, dipun awis bokong ayam. gendhis angsal Jawa Ipsum nangis rumput wilujeng unyeng-unyeng; pados gujeng benter andhap lisa Leres, lisah, ulem-ulem nedhi gesang manah cangkem: nem aken benter bebucal baita dangu</q>
 				<cite class="clients__autor">
 					<div class="clients__autor--img"><img src="img/autor.jpg"></div>
-					<p class="clients__autor--name">Dropbox Serior Developer</p>
+					<p class="clients__autor--name"></p>
+					<p class="clients__autor--position">Dropbox Serior Developer</p>
 				</cite>
 			</blockquote>
 		</section>
-		<section class="team">
+		<section class="team" id="team">
 			<h2 class="team__title">Our Professional Team</h2>
 			<p class="team__text">Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
-			<div class="row">
-				<div class=" team-card col-md-3 col-sm-6">
+			<div class="row team__row">
+				<div class=" team-card col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-1">
 					<div class="team-card__img">
-						<img src="img/salazar.jpg" alt="autor">
+						<img class="img-responsive center-block" src="img/salazar.jpg" alt="autor">
 						<p class="team-card__hover">Read his bio</p>
 					</div>
 					<div class="team-card__block">
@@ -118,9 +123,9 @@
 						</ul>
 					</div>
 				</div>
-				<div class=" team-card col-md-3 col-sm-6">
+				<div class=" team-card col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-1">
 					<div class="team-card__img">
-						<img src="img/gryffindor.jpg" alt="autor">
+						<img class="img-responsive center-block" src="img/gryffindor.jpg" alt="autor">
 						<p class="team-card__hover">Read his bio</p>
 					</div>
 					<div class="team-card__block">
@@ -135,9 +140,9 @@
 						</ul>
 					</div>
 				</div>
-				<div class=" team-card col-md-3 col-sm-6">
+				<div class=" team-card col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-1">
 					<div class="team-card__img">
-						<img src="img/ravenclaw.jpg" alt="autor">
+						<img class="img-responsive center-block" src="img/ravenclaw.jpg" alt="autor">
 						<p class="team-card__hover">Read his bio</p>
 					</div>
 					<div class="team-card__block">
@@ -152,9 +157,9 @@
 						</ul>
 					</div>
 				</div>
-				<div class=" team-card col-md-3 col-sm-6">
+				<div class=" team-card col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-1">
 					<div class="team-card__img">
-						<img src="img/hufflepuff.jpg" alt="autor">
+						<img class="img-responsive center-block" src="img/hufflepuff.jpg" alt="autor">
 						<p class="team-card__hover">Read his bio</p>
 					</div>
 					<div class="team-card__block">
@@ -170,22 +175,22 @@
 					</div>
 				</div>	
 			</div>
-			<button class="btn btn__team"><a href=""></a></button>
+			<button class="btn btn__team"><a href="">Meet our full team</a></button>
 		</section>
 		<section class="partners">
 			<ul class="partners__list">
-				<li class="partners__item"><img src="img/Coca-Cola.jpg" alt="logo"></li>
-				<li class="partners__item"><img src="img/Dropbox.jpg" alt="logo"></li>
-				<li class="partners__item"><img src="img/intel.jpg" alt="logo"></li>
-				<li class="partners__item"><img src="img/Zendesk.jpg" alt="logo"></li>
-				<li class="partners__item"><img src="img/Nokia.jpg" alt="logo"></li>
+				<li class="partners__item"><img src="img/Coca-Cola.png" alt="logo"></li>
+				<li class="partners__item"><img src="img/Dropbox.png" alt="logo"></li>
+				<li class="partners__item"><img src="img/intel.png" alt="logo"></li>
+				<li class="partners__item"><img src="img/Zendesk.png" alt="logo"></li>
+				<li class="partners__item"><img src="img/Nokia.png" alt="logo"></li>
 			</ul>
 		</section>	
-		<section class="pricing">
+		<section class="pricing" id="pricing">
 			<h2 class="pricing__title">Pricing table</h2>
 			<p class="pricing__text">Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng</p>
 			<div class="row">
-				<div class="pricing-card col-md-4 col-sm-12">
+				<div class="pricing-card col-md-4  col-sm-12">
 					<div class="pricing-card__top">
 						<h3 class="pricing-card__title">Standart Pack</h3>
 						<p class="pricing-card__price">$50</p>
@@ -229,40 +234,51 @@
 				</div>
 			</div>
 		</section>
-		<div class="row">
-			<section class="map col-md-6 col-sm-12">
-				<img class="map__img" src="img/map.jpg">
+	
+		<div class="row height="400px";>
+			<section class="map col-md-6 col-sm-12" style="padding-right: 0;">
+				<img class="img-responsive center-block" class="map__img" src="img/map.jpg">
 				<img class="map__marker" src="img/marker.png">
 			</section>
-			<section class="form col-sm-6 col-sm-12">
-				<form action="" method="get">
-					<label for="name">Name</label>
-					<input id="name" type="text">
-					<label for="email">Email</label>
-					<input id="email" type="email">
-					<label for="tel">Phone</label>
-					<input id="tel" type="Phone">
-					<label for="message">Message</label>
-					<textarea id="message"></textarea>
+			<section class="form col-sm-6 col-sm-12" style="padding-left: 0;">
+				<form class="form__form" action="" method="get">
+					<div class="form__wrapper">
+						<label for="name">Name</label>
+						<input id="name" type="text">
+					</div>
+					<div class="form__wrapper">
+						<label for="email">Email</label>
+						<input id="email" type="email">
+					</div>
+					<div class="form__wrapper">
+						<label for="tel">Phone</label>
+						<input id="tel" type="Phone">
+					</div>
+					<div class="form__wrapper">
+						<label for="message">Message</label>
+						<textarea id="message"></textarea>
+					</div>
 					<button type="submit">Submit</button>	
 				</form>
 			</section>
 		</div>
+
 		<footer class="main-footer">
 			<div class="row">
 				<div class="main-footer__logo col-md-1">
-					<img src="">
+					<img src="img/logo-footer.png" width="82px;">
 				</div>
 				<p class="main-footer__copyright col-md-3">© Copyright 2015. Allright Reserved</p>
-			</div>
-			<div class="sotial col-md-3 col-md-1-offset-5">
-				<p class="sotial__text">Stay in Touch</p>
-				<ul class="sotial__list">
-					<li class="sotial__item "><a href=""><img src="img/fb.jpg" alt="facebook"></a></li>
-					<li class="sotial__item "><a href=""><img src="img/tw.jpg" alt='tweeter'></a></li>
-					<li class="sotial__item "><a href=""><img src="img/google.jpg" alt="google"></a></li>
-					<li class="sotial__item "><a href=""><img src="img/dribble.jpg" alt="dribble"></a></li>
-				</ul>
+			
+				<div class="sotial col-md-3 col-md-offset-5">
+					<p class="sotial__text">Stay in Touch</p>
+					<ul class="sotial__list">
+					<li class="sotial__item "><a href=""><img src="img/fb.png" alt="	facebook"></a></li>
+					<li class="sotial__item "><a href=""><img src="img/tw.jpg" alt='	tweeter'></a></li>
+					<li class="sotial__item "><a href=""><img src="img/google.jpg" 	alt="google"></a></li>
+					<li class="sotial__item "><a href=""><img src="img/dribble.png" 	alt="dribble"></a></li>
+					</ul>
+				</div>
 			</div>	
 		</footer>
 	</div>

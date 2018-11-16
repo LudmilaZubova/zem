@@ -1,0 +1,16 @@
+.work{
+
+	&__title{
+		@include font_title;
+	}
+	&__text{
+		@include font_text;
+		position: relative;
+		&::after{
+			    @include p_after;
+		}
+	}
+	&__img{
+		max-width: 100%;
+	}
+}
